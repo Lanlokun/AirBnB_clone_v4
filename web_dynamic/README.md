@@ -1,1 +1,1 @@
-This directory contains a team-projects on web_dynamic
+This directory contains a team-project on web_dynamic
