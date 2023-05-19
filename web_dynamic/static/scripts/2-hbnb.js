@@ -8,4 +8,14 @@ $('document').ready(function () {
     }
     $('.amenities h4').text(Object.values(amenities).join(', '));
   });
+
+  $.get('http://0.0.0.0:5000/api/v1/status/', function (data, status) {
+    if (status === 'success') {
+      $('div#api_status').addClass('available');
+    } else {
+      $('div#api_status').removeClass('available');
+    }
+  }
+  );
+  
 });
